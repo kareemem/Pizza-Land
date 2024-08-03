@@ -1,0 +1,10 @@
+.btnClose{
+  border: solid 2px darkred;
+  font-size: 1.375rem;
+}
+
+.parent{
+  background-color: var(--change-lightMode);
+  color: var(--change-darkMode) !important;
+}
+

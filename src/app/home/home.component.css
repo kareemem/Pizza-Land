@@ -1,0 +1,7 @@
+button{
+  position: sticky;
+  bottom: 1.875rem;
+  z-index: 9999;
+  border-color: var(--change-darkMode) !important;
+  color: var(--change-darkMode);
+}

@@ -1,0 +1,50 @@
+
+<div class="p-2">
+  <button (click)="close()" class="btn btnClose d-block ms-auto">
+    <i class="fa-solid fa-xmark text-danger"></i>
+  </button>
+</div>
+<div class="p-3 text-center">
+  <div class="w-50 mx-auto">
+    <img [src]="data" class="w-100 h-75" alt="">
+  </div>
+  <div [dir]="directions">
+    <h4 class="mt-3">lorem</h4>
+    <div>
+      <p *ngIf="description" class="wow animate__backInDown"data-wow-delay='0' data-wow-duration="1s">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, dolore.</p>
+      <span class="text-muted my-1 pointer" (click)="showDesc()"><i class="iconShow fa-solid fa-arrow-down"></i>Description</span>
+    </div>
+    <div class="p-2 startRating">
+      <fieldset class="rating d-flex justify-content-center align-items-center flex-lg-row-reverse">
+        <input (click)="selectRating($event)" type="radio" id="star5" name="rating" value="5">
+        <label for="star5" class="full"></label>
+        <input (click)="selectRating($event)" type="radio" id="star4.5" name="rating" value="4.5">
+        <label for="star4.5" class="half"></label>
+        <input (click)="selectRating($event)" type="radio" id="star4" name="rating" value="4">
+        <label for="star4" class="full"></label>
+        <input (click)="selectRating($event)" type="radio" id="star3.5" name="rating" value="3.5">
+        <label for="star3.5" class="half"></label>
+        <input (click)="selectRating($event)" type="radio" id="star3" name="rating" value="3">
+        <label for="star3" class="full"></label>
+        <input (click)="selectRating($event)" type="radio" id="star2.5" name="rating" value="2.5">
+        <label for="star2.5" class="half"></label>
+        <input (click)="selectRating($event)" type="radio" id="star2" name="rating" value="2">
+        <label for="star2" class="full"></label>
+        <input (click)="selectRating($event)" type="radio" id="star1.5" name="rating" value="1.5">
+        <label for="star1.5" class="half"></label>
+        <input (click)="selectRating($event)" type="radio" id="star1" name="rating" value="1">
+        <label for="star1" class="full"></label>
+        <input (click)="selectRating($event)" type="radio" id="star0.5" name="rating" value="0.5">
+        <label for="star0.5" class="half"></label>
+      </fieldset>
+      <h4 class="my-2 text-center"  *ngIf="rating>0">
+        {{rating}} {{"rating.outOf" | translate}} 5
+        <span class="text-warning" *ngIf="rating==1 ||rating==0.5">{{ "rating.Terrible" | translate }}</span>
+        <span class="text-warning" *ngIf="rating==2 ||rating==1.5">{{ "rating.Bad" | translate }}</span>
+        <span class="text-warning" *ngIf="rating==3 ||rating==2.5">{{ "rating.OK" | translate }}</span>
+        <span class="text-warning" *ngIf="rating==4 ||rating==3.5">{{ "rating.Good" | translate }}</span>
+        <span class="text-warning" *ngIf="rating==5 ||rating==4.5">{{ "rating.Excellent" | translate }}</span>
+      </h4>
+    </div>
+  </div>
+</div>

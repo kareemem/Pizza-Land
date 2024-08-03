@@ -1,0 +1,137 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p:not(i) {
+  font-family: "Cairo", sans-serif;
+}
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background: white;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgray;
+  border-radius: 20px;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+
+:root {
+  --color: #9176ff;
+  --dark-color: #2b2b2b;
+  --dark-icon-color: #fff;
+  --light-color:#f7f7f7;
+  --light-icon-color:#ffde59;
+  --change-lightMode:#f7f7f7;
+  --change-darkMode:#2b2b2b;
+  --change-rate:#212529;
+  --change-del:#778899;
+}
+
+body{
+  background-color: var(--light-color);
+}
+.btnDarkMode{
+background-color: #fff;
+width: 4.5em;
+height: 2.5em;
+border-radius: 10em;
+box-shadow:inset 0 8px 60px rgb(0, 0, 0,0.1),
+            inset 0 8px 8px rgb(0, 0, 0,0.1),
+            inset 0 -4px 4px rgb(0, 0, 0,0.1)
+;
+padding: 0 0.4em;
+position: relative;
+display: flex;
+align-items: center;
+cursor: pointer;
+}
+.btnDarkMode .btn_indicator{
+  background-color: #fff;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: 0 8px 40px rgb(0, 0, 0,0.2);
+  transition: transform 0.3s ease;
+}
+.btnDarkMode .btn_icon-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btnDarkMode .btn_icon{
+  color: var(--light-icon-color);
+  font-size: 1.25rem;
+}
+
+.btnDarkMode .btn_icon .animated{
+  animation: spin 0.5s;
+}
+@keyframes spin{
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+/*################################## dark mode ################################################*/
+.darkMode .btn_indicator{
+  transform: translateX(1.8em);
+  background-color: var(--dark-color);
+  box-shadow: 0 8px 40px rgb(0, 0, 0,0.3);
+}
+body.darkMode{
+  background-color: var(--dark-color);
+}
+.darkMode .btnDarkMode{
+  box-shadow:inset 0 8px 60px rgb(0, 0, 0,0.3),
+            inset 8px 0 8px rgb(0, 0, 0,0.3),
+            inset 0 -4px 4px rgb(0, 0, 0,0.3)
+;
+}
+.darkMode .btn_icon{
+  color: var(--dark-icon-color);
+}
+
+/* header */
+.darkMode .layer{
+  background-color: rgb(10, 10, 11,0.5);
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* style buy dialog */
+.buyDialog .mat-mdc-radio-button .mdc-form-field {
+  color: var(--change-darkMode) !important;
+}
+
+.buyDialog .mat-mdc-radio-button.mat-accent {
+  --mdc-radio-disabled-selected-icon-color: #ff4081;
+  --mdc-radio-disabled-unselected-icon-color: #ff4081;
+  --mdc-radio-unselected-hover-icon-color: #ff4081;
+  --mdc-radio-unselected-icon-color: #ff4081;
+  --mdc-radio-unselected-pressed-icon-color:#ff4081 ;
+  --mdc-radio-selected-focus-icon-color: #ff4081;
+  --mdc-radio-selected-hover-icon-color: #ff4081;
+  --mdc-radio-selected-icon-color: #ff4081;
+  --mdc-radio-selected-pressed-icon-color: #ff4081;
+  --mat-radio-ripple-color: #ff4081;
+  --mat-radio-checked-ripple-color: #ff4081;
+  --mat-radio-disabled-label-color: #ff4081;
+}
+

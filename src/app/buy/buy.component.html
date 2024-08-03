@@ -1,0 +1,53 @@
+<div class="p-2 parent buyDialog" [dir]="directions">
+  <button (click)="close()" class="btn btnClose d-block ms-auto">
+    <i class="fa-solid fa-xmark text-danger"></i>
+  </button>
+  <div class="mt-5">
+    <div *ngIf="showChoosePay">
+      <p class="h3">{{'buy.choosePayment'|translate}}</p>
+      <div class="mx-3" >
+        <mat-radio-group (change)="getPaymentMethod($event)">
+          <mat-radio-button class="changeText" value="cash"   color="accent">{{'buy.Cash'|translate}}</mat-radio-button>
+          <mat-radio-button class="changeText" value="vodafoneCash" color="accent">{{'buy.vodafone'|translate}}</mat-radio-button>
+        </mat-radio-group>
+        <div class="mt-2">
+          <button class="btn btn-outline-danger fw-bold" (click)="cashMethod()">{{'buy.Save'|translate}}</button>
+        </div>
+    </div>
+    </div>
+    <form class="mx-3" *ngIf="showPayOnline">
+      <div class="d-flex justify-content-center align-items-center">
+        <mat-form-field class="example-full-width w-100 wow animate__backInRight" data-wow-duration="1s" data-wow-delay="0">
+          <mat-label>{{"reservation.name"|translate}}</mat-label>
+          <input matInput type="text" placeholder="name...">
+        </mat-form-field>
+        <mat-form-field class="example-full-width w-100 mx-2 wow animate__backInLeft" data-wow-duration="1s" data-wow-delay="0">
+          <mat-label>{{"reservation.phone"|translate}}</mat-label>
+          <input matInput type="tel" placeholder="phone...">
+        </mat-form-field>
+      </div>
+      <div class="mt-2">
+        <mat-form-field class="example-full-width w-100 mx-2 wow animate__backInUp" data-wow-duration="1s" data-wow-delay="0">
+          <mat-label>{{'buy.Address'|translate}}</mat-label>
+          <input matInput type="text" placeholder="address...">
+        </mat-form-field>
+      </div>
+      <div class="my-2 wow animate__backInUp"data-wow-duration="1.5s" data-wow-delay="0">
+        <label for="selectFile" class="btn btn-outline-danger">
+          {{'buy.copyPayment'|translate}}
+        </label>
+        <span class="text-danger">{{fileName}}</span>
+        <input
+          (change)="selectImage($event)"
+          id="selectFile"
+          type="file"
+          class="form-control"
+          hidden
+        />
+      </div>
+      <div>
+        <button class="btn btn-outline-danger wow animate__backInUp"data-wow-duration="1.5s" data-wow-delay="0">{{'buy.Send'|translate}}</button>
+      </div>
+    </form>
+  </div>
+</div>

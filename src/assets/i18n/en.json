@@ -1,0 +1,43 @@
+{
+"nav":{
+  "home":"Home",
+  "reservation":"Table Reservation",
+  "purchase":"Purchase Plan"
+},
+  "header":{
+    "title":"Large selection of pizza"
+  },
+  "menu":{
+    "Section":"Section"
+  },
+  "rating":{
+    "Terrible":"Terrible",
+    "Bad":"Bad",
+    "OK":"OK",
+    "Good":"Good",
+    "Excellent":"Excellent",
+    "outOf":"Out Of"
+  },
+  "reservation":{
+    "h3part1":"We will be",
+    "span":"happy",
+    "h3part2":"to visit you",
+    "name":"Your Name",
+    "phone":"Your Phone",
+    "date":"Choose a date",
+    "hour":"The Hour"
+  },
+  "buy":{
+    "choosePayment":"choose a payment method",
+    "Cash":"Cash",
+    "vodafone":"Vodafone Cash",
+    "Save":"Save",
+    "Address":"Address",
+    "copyPayment":"Submit a copy of the payment invoice",
+    "Send":"Send"
+  },
+  "buyTS":{
+    "error":"please choose a payment method",
+    "success":"you will receive the order within (30) minutes"
+  }
+}

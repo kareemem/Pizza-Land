@@ -1,0 +1,68 @@
+.col-md-3 h4{
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: var(--change-darkMode);
+  line-height: 1.625rem;
+}
+.listTitles a{
+  text-decoration: none;
+  font-size: .875rem;
+  font-weight: 600;
+  color: var(--change-darkMode);
+
+}
+.foodCategory
+{
+  border-color: #d5261f !important;
+  transition-duration: 0.5s;
+}
+.foodCategory:hover{
+  border-color: #008c3b !important;
+  background-color: rgb(0, 140, 59,0.1);
+}
+.category img{
+  height: 135px !important;
+}
+
+.category .discount{
+  width: fit-content;
+  background-color: rgb(213, 38, 31);
+  font-weight: 500;
+  line-height: .75rem;
+  font-size: .625rem;
+}
+.category h5{
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--change-darkMode);
+}
+.category h4{
+  color: var(--change-darkMode);
+}
+.category span{
+  font-size: .875rem;
+  color: var(--change-rate);
+  font-weight: 500;
+}
+.category i{
+  color: rgb(255, 193, 7);
+  font-size: .875rem;
+  font-weight: 900;
+}
+.category .price p{
+  color: rgb(0, 140, 59);
+  font-weight: 600;
+  line-height: 1.375rem;
+  font-size: 1rem;
+}
+.category .price del{
+  color: var(--change-del) ;
+  font-weight:400 ;
+  font-size: .75rem;
+}
+
+.active
+{
+  border-color: #008c3b !important;
+  background-color: rgb(0, 140, 59,0.1);
+}

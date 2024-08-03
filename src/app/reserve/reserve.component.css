@@ -1,0 +1,12 @@
+:host ::ng-deep {
+  .mdc-text-field--filled:not(.mdc-text-field--disabled){
+    background-color: #ddd !important;
+  }
+}
+h3{
+  font-size: 2rem;
+  color: var(--change-darkMode);
+}
+span{
+  color: #fdd700;
+}

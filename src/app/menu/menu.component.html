@@ -1,0 +1,296 @@
+
+<div class="row my-4" [dir]="directions">
+<div class="col-md-3">
+  <div class="position-sticky top-0 pt-5 wow animate__backInDown"
+  data-wow-duration="1.5s"
+  data-wow-delay="0s">
+    <h4 class="my-4">{{'menu.Section'|translate}}</h4>
+  <div class="listTitles">
+    <div>
+      <a class="border d-inline-block p-1 w-100 foodCategory mt-3"  href="#test">البيتزا</a>
+    </div>
+    <div >
+      <a class="border d-inline-block p-1 w-100 foodCategory mt-3" href="#testone">مقبلات</a>
+    </div>
+    <div >
+      <a class="border d-inline-block p-1 w-100 foodCategory mt-3" href="#test">صوص</a>
+    </div>
+  </div>
+  </div>
+</div>
+<div class="col-md-9">
+  <div class="category pt-5">
+    <h4 id="test" class="my-4">البيتزا (9)</h4>
+    <div class="border p-3  mt-3 ">
+      <div [dir]="directions" class="pointer d-flex justify-content-start align-items-center" (click)="showDialog(da[0])">
+        <div>
+            <p class="discount text-white p-2 m-0">28.8%-</p>
+            <img [src]="da[0]" class="w-100" alt="img food">
+        </div>
+        <div class="mx-2">
+          <h5>مارجريتا</h5>
+          <div>
+            <span><i class="fa-solid fa-star"></i>0.0</span>
+          </div>
+          <div class="price">
+            <p class="d-inline-block">
+              ج.م
+              100
+            </p>
+            <del class="d-inline-block mx-2">
+              ج.م
+              120
+            </del>
+          </div>
+      </div>
+    </div>
+    <div *ngIf="showBuy">
+      <button class="btn btn-outline-success fw-bold  d-block" [ngClass]="directions == 'rtl'?'me-auto':'ms-auto'" (click)="showDialogBuy()">Buy</button>
+    </div>
+    </div>
+    <div (click)="showDialog(da[1])" class="border p-3 d-flex justify-content-start align-items-center mt-3">
+      <div>
+        <p class="discount text-white p-2 m-0">28.8%-</p>
+        <img [src]="da[1]" class="w-100" alt="img food">
+      </div>
+      <div>
+        <h5>مارجريتا</h5>
+        <div>
+          <span><i class="fa-solid fa-star"></i>0.0</span>
+        </div>
+        <div class="price">
+          <p class="d-inline-block">
+            ج.م
+            100
+          </p>
+          <del class="d-inline-block mx-2">
+            ج.م
+            120
+          </del>
+        </div>
+      </div>
+    </div>
+    <div class="border p-3 d-flex justify-content-start align-items-center mt-3">
+      <div>
+        <p class="discount text-white p-2 m-0">28.8%-</p>
+        <img src="../../assets/item-65cdda07cbb6e.webp" class="w-100" alt="img food">
+      </div>
+      <div>
+        <h5>مارجريتا</h5>
+        <div>
+          <span><i class="fa-solid fa-star"></i>0.0</span>
+        </div>
+        <div class="price">
+          <p class="d-inline-block">
+            ج.م
+            100
+          </p>
+          <del class="d-inline-block mx-2">
+            ج.م
+            120
+          </del>
+        </div>
+      </div>
+    </div>
+    <div class="border p-3 d-flex justify-content-start align-items-center mt-3">
+      <div>
+        <p class="discount text-white p-2 m-0">28.8%-</p>
+        <img src="../../assets/item-65cdda07cbb6e.webp" class="w-100" alt="img food">
+      </div>
+      <div>
+        <h5>مارجريتا</h5>
+        <div>
+          <span><i class="fa-solid fa-star"></i>0.0</span>
+        </div>
+        <div class="price">
+          <p class="d-inline-block">
+            ج.م
+            100
+          </p>
+          <del class="d-inline-block mx-2">
+            ج.م
+            120
+          </del>
+        </div>
+      </div>
+    </div>
+    <div class="border p-3 d-flex justify-content-start align-items-center mt-3">
+      <div>
+        <p class="discount text-white p-2 m-0">28.8%-</p>
+        <img src="../../assets/item-65cdda07cbb6e.webp" class="w-100" alt="img food">
+      </div>
+      <div>
+        <h5>مارجريتا</h5>
+        <div>
+          <span><i class="fa-solid fa-star"></i>0.0</span>
+        </div>
+        <div class="price">
+          <p class="d-inline-block">
+            ج.م
+            100
+          </p>
+          <del class="d-inline-block mx-2">
+            ج.م
+            120
+          </del>
+        </div>
+      </div>
+    </div>
+    <div class="border p-3 d-flex justify-content-start align-items-center mt-3">
+      <div>
+        <p class="discount text-white p-2 m-0">28.8%-</p>
+        <img src="../../assets/item-65cdda07cbb6e.webp" class="w-100" alt="img food">
+      </div>
+      <div>
+        <h5>مارجريتا</h5>
+        <div>
+          <span><i class="fa-solid fa-star"></i>0.0</span>
+        </div>
+        <div class="price">
+          <p class="d-inline-block">
+            ج.م
+            100
+          </p>
+          <del class="d-inline-block mx-2">
+            ج.م
+            120
+          </del>
+        </div>
+      </div>
+    </div>
+    <h4 id="testone" class="my-3">البيتزا (9)</h4>
+    <div class="border p-3 d-flex justify-content-start align-items-center mt-3">
+      <div>
+        <p class="discount text-white p-2 m-0">28.8%-</p>
+        <img src="../../assets/item-65cdda07cbb6e.webp" class="w-100" alt="img food">
+      </div>
+      <div>
+        <h5>مارجريتا</h5>
+        <div>
+          <span><i class="fa-solid fa-star"></i>0.0</span>
+        </div>
+        <div class="price">
+          <p class="d-inline-block">
+            ج.م
+            100
+          </p>
+          <del class="d-inline-block mx-2">
+            ج.م
+            120
+          </del>
+        </div>
+      </div>
+    </div>
+    <div class="border p-3 d-flex justify-content-start align-items-center mt-3">
+      <div>
+        <p class="discount text-white p-2 m-0">28.8%-</p>
+        <img src="../../assets/item-65cdda07cbb6e.webp" class="w-100" alt="img food">
+      </div>
+      <div>
+        <h5>مارجريتا</h5>
+        <div>
+          <span><i class="fa-solid fa-star"></i>0.0</span>
+        </div>
+        <div class="price">
+          <p class="d-inline-block">
+            ج.م
+            100
+          </p>
+          <del class="d-inline-block mx-2">
+            ج.م
+            120
+          </del>
+        </div>
+      </div>
+    </div>
+    <div class="border p-3 d-flex justify-content-start align-items-center mt-3">
+      <div>
+        <p class="discount text-white p-2 m-0">28.8%-</p>
+        <img src="../../assets/item-65cdda07cbb6e.webp" class="w-100" alt="img food">
+      </div>
+      <div>
+        <h5>مارجريتا</h5>
+        <div>
+          <span><i class="fa-solid fa-star"></i>0.0</span>
+        </div>
+        <div class="price">
+          <p class="d-inline-block">
+            ج.م
+            100
+          </p>
+          <del class="d-inline-block mx-2">
+            ج.م
+            120
+          </del>
+        </div>
+      </div>
+    </div>
+    <div class="border p-3 d-flex justify-content-start align-items-center mt-3">
+      <div>
+        <p class="discount text-white p-2 m-0">28.8%-</p>
+        <img src="../../assets/item-65cdda07cbb6e.webp" class="w-100" alt="img food">
+      </div>
+      <div>
+        <h5>مارجريتا</h5>
+        <div>
+          <span><i class="fa-solid fa-star"></i>0.0</span>
+        </div>
+        <div class="price">
+          <p class="d-inline-block">
+            ج.م
+            100
+          </p>
+          <del class="d-inline-block mx-2">
+            ج.م
+            120
+          </del>
+        </div>
+      </div>
+    </div>
+    <div class="border p-3 d-flex justify-content-start align-items-center mt-3">
+      <div>
+        <p class="discount text-white p-2 m-0">28.8%-</p>
+        <img src="../../assets/item-65cdda07cbb6e.webp" class="w-100" alt="img food">
+      </div>
+      <div>
+        <h5>مارجريتا</h5>
+        <div>
+          <span><i class="fa-solid fa-star"></i>0.0</span>
+        </div>
+        <div class="price">
+          <p class="d-inline-block">
+            ج.م
+            100
+          </p>
+          <del class="d-inline-block mx-2">
+            ج.م
+            120
+          </del>
+        </div>
+      </div>
+    </div>
+    <div class="border p-3 d-flex justify-content-start align-items-center mt-3">
+      <div>
+        <p class="discount text-white p-2 m-0">28.8%-</p>
+        <img src="../../assets/item-65cdda07cbb6e.webp" class="w-100" alt="img food">
+      </div>
+      <div>
+        <h5>مارجريتا</h5>
+        <div>
+          <span><i class="fa-solid fa-star"></i>0.0</span>
+        </div>
+        <div class="price">
+          <p class="d-inline-block">
+            ج.م
+            100
+          </p>
+          <del class="d-inline-block mx-2">
+            ج.م
+            120
+          </del>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

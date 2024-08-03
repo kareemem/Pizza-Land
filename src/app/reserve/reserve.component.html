@@ -1,0 +1,30 @@
+<section class="d-flex justify-content-center align-items-center container-md vh-100" [dir]="directions">
+  <div class="w-100">
+      <h3 class="wow animate__flipInX"data-wow-duration="2s" data-wow-delay="0">{{"reservation.h3part1"|translate}} <span>{{"reservation.span"|translate}}</span> {{"reservation.h3part2"|translate}}</h3>
+      <form class="mx-3 my-4">
+        <div class="d-flex justify-content-center">
+          <mat-form-field class="example-full-width w-100 wow animate__fadeInTopLeft"data-wow-duration="1s" data-wow-delay="0">
+            <mat-label>{{"reservation.name"|translate}}</mat-label>
+            <input matInput type="text" placeholder="name...">
+          </mat-form-field>
+          <mat-form-field class="example-full-width w-100 mx-2 wow animate__fadeInTopRight"data-wow-duration="1s" data-wow-delay="0">
+            <mat-label>{{"reservation.phone"|translate}}</mat-label>
+            <input type="tel" matInput placeholder="phone...">
+          </mat-form-field>
+        </div>
+        <div class="d-flex justify-content-center">
+          <mat-form-field class="w-100 wow animate__fadeInBottomLeft"data-wow-duration="1s" data-wow-delay="0">
+            <mat-label>{{"reservation.date"|translate}}</mat-label>
+            <input matInput [matDatepicker]="picker">
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+          <mat-form-field class="example-full-width w-100 mx-2 wow animate__fadeInBottomRight"data-wow-duration="1s" data-wow-delay="0">
+            <mat-label>{{"reservation.hour"|translate}}</mat-label>
+            <input type="time" matInput>
+          </mat-form-field>
+        </div>
+        <button class="btn btn-outline-success fw-bold wow animate__zoomInDown" data-wow-delay="0"data-wow-duration="1.5s">Reservation Confirmation</button>
+      </form>
+  </div>
+</section>
